@@ -743,9 +743,9 @@ if __name__ == '__main__':
     print("Vocabulary Size: {}".format(ntokens))
 
     if args.reload_exp or args.load_pretrained:
-        autoencoder = torch.load(open(cur_dir + '/models/autoencoder_model.pt'))
-        gan_gen = torch.load(open(cur_dir + '/models/gan_gen_model.pt'))
-        gan_disc = torch.load(open(cur_dir + '/models/gan_disc_model.pt'))
+        autoencoder = torch.load(open(cur_dir + '/models/autoencoder_model.pt', 'rb'))
+        gan_gen = torch.load(open(cur_dir + '/models/gan_gen_model.pt', 'rb'))
+        gan_disc = torch.load(open(cur_dir + '/models/gan_disc_model.pt', 'rb'))
         with open(cur_dir + '/vocab.json', 'r') as f:
             corpus.dictionary.word2idx = json.load(f)
 
@@ -973,6 +973,8 @@ if __name__ == '__main__':
 
             else:
                 if niter_global % 100 == 0:
+                    print('[%d/%d][%d/%d] Loss_I: %.8f'
+                                % (epoch, args.epochs, niter, len(train_data), errI.data.item()))
                     with open("./output/{}/logs.txt".format(args.outf), 'a') as f:
                         f.write('[%d/%d][%d/%d] Loss_I: %.8f \n'
                                 % (epoch, args.epochs, niter, len(train_data), errI.data.item()))
