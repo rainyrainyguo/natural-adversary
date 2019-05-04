@@ -1,0 +1,279 @@
+{'data_path': './data', 'classifier_path': './models', 'kenlm_path': './models/kenlm', 'outf': '1556883245', 'vocab_size': 11000, 'maxlen': 10, 'lowercase': True, 'packed_rep': False, 'emsize': 300, 'nhidden': 300, 'nlayers': 1, 'noise_radius': 0.2, 'noise_anneal': 0.995, 'hidden_init': False, 'arch_i': '300-300', 'arch_g': '300-300', 'arch_d': '300-300', 'arch_conv_filters': '500-700-1000', 'arch_conv_strides': '1-2-2', 'arch_conv_windows': '3-3-3', 'z_size': 100, 'temp': 1, 'enc_grad_norm': True, 'gan_toenc': -0.01, 'dropout': 0.0, 'useJS': True, 'perturb_z': True, 'epochs': 15, 'min_epochs': 20, 'no_earlystopping': False, 'patience': 5, 'batch_size': 32, 'niters_ae': 1, 'niters_gan_d': 5, 'niters_gan_g': 1, 'niters_inv': 5, 'niters_gan_schedule': '2-4-6', 'lr_ae': 1, 'lr_inv': 1e-05, 'lr_gan_g': 5e-05, 'lr_gan_d': 1e-05, 'beta1': 0.9, 'clip': 1, 'gan_clamp': 0.01, 'convolution_enc': True, 'use_inv_ae': False, 'update_base': True, 'load_pretrained': None, 'reload_exp': None, 'sample': False, 'N': 5, 'log_interval': 200, 'seed': 1111, 'cuda': False, 'debug_mode': False, 'hybrid': False, 'ntokens': 11004}
+Create experiment at ./output/1556883245
+Starting with epoch :1
+Training...
+[1/15][99/13866] Loss_D: 0.00434464 (Loss_D_real: -0.00430107 Loss_D_fake: 0.00004358) Loss_G: 0.00025855 Loss_I: 0.02191615
+[1/15][199/13866] Loss_D: 0.00370875 (Loss_D_real: -0.00324120 Loss_D_fake: 0.00046755) Loss_G: 0.00050067 Loss_I: 0.02229237
+| epoch   1 |   200/13866 batches | ms/batch 3634.24 | loss  4.60 | ppl    99.09 | acc     0.34
+[1/15][299/13866] Loss_D: 0.00449425 (Loss_D_real: -0.00400907 Loss_D_fake: 0.00048519) Loss_G: 0.00047187 Loss_I: 0.02219805
+[1/15][399/13866] Loss_D: 0.00368447 (Loss_D_real: -0.00368625 Loss_D_fake: -0.00000178) Loss_G: -0.00033763 Loss_I: 0.02152180
+| epoch   1 |   400/13866 batches | ms/batch 3717.61 | loss  3.71 | ppl    40.94 | acc     0.36
+[1/15][499/13866] Loss_D: 0.00448010 (Loss_D_real: -0.00390189 Loss_D_fake: 0.00057821) Loss_G: 0.00056551 Loss_I: 0.02106942
+[1/15][599/13866] Loss_D: 0.00375178 (Loss_D_real: -0.00405179 Loss_D_fake: -0.00030001) Loss_G: -0.00043777 Loss_I: 0.02119124
+| epoch   1 |   600/13866 batches | ms/batch 3791.23 | loss  3.47 | ppl    32.14 | acc     0.35
+[1/15][699/13866] Loss_D: 0.00234362 (Loss_D_real: -0.00299916 Loss_D_fake: -0.00065555) Loss_G: -0.00064442 Loss_I: 0.02040440
+[1/15][799/13866] Loss_D: 0.00134072 (Loss_D_real: -0.00248135 Loss_D_fake: -0.00114063) Loss_G: -0.00107795 Loss_I: 0.02090867
+| epoch   1 |   800/13866 batches | ms/batch 3655.70 | loss  3.31 | ppl    27.49 | acc     0.44
+[1/15][899/13866] Loss_D: 0.00352853 (Loss_D_real: -0.00302850 Loss_D_fake: 0.00050003) Loss_G: 0.00074635 Loss_I: 0.02135546
+[1/15][999/13866] Loss_D: 0.00194352 (Loss_D_real: -0.00327708 Loss_D_fake: -0.00133356) Loss_G: -0.00033360 Loss_I: 0.02050204
+| epoch   1 |  1000/13866 batches | ms/batch 4418.58 | loss  3.21 | ppl    24.76 | acc     0.43
+[1/15][1099/13866] Loss_D: 0.00234913 (Loss_D_real: -0.00384933 Loss_D_fake: -0.00150020) Loss_G: -0.00227200 Loss_I: 0.02104518
+[1/15][1199/13866] Loss_D: 0.00221909 (Loss_D_real: -0.00413399 Loss_D_fake: -0.00191490) Loss_G: -0.00172202 Loss_I: 0.02024585
+| epoch   1 |  1200/13866 batches | ms/batch 3822.20 | loss  3.16 | ppl    23.46 | acc     0.46
+[1/15][1299/13866] Loss_D: 0.00344412 (Loss_D_real: -0.00448342 Loss_D_fake: -0.00103931) Loss_G: -0.00085364 Loss_I: 0.02052463
+[1/15][1399/13866] Loss_D: 0.00335918 (Loss_D_real: -0.00448189 Loss_D_fake: -0.00112271) Loss_G: -0.00045993 Loss_I: 0.02037497
+| epoch   1 |  1400/13866 batches | ms/batch 3765.83 | loss  3.08 | ppl    21.75 | acc     0.47
+[1/15][1499/13866] Loss_D: 0.00505008 (Loss_D_real: -0.00424354 Loss_D_fake: 0.00080654) Loss_G: 0.00060459 Loss_I: 0.01943926
+[1/15][1599/13866] Loss_D: 0.00331970 (Loss_D_real: -0.00429439 Loss_D_fake: -0.00097469) Loss_G: -0.00093297 Loss_I: 0.01897548
+| epoch   1 |  1600/13866 batches | ms/batch 3247.32 | loss  3.00 | ppl    20.15 | acc     0.50
+[1/15][1699/13866] Loss_D: 0.00262433 (Loss_D_real: -0.00395304 Loss_D_fake: -0.00132871) Loss_G: -0.00119462 Loss_I: 0.01925641
+[1/15][1799/13866] Loss_D: 0.00287198 (Loss_D_real: -0.00383096 Loss_D_fake: -0.00095897) Loss_G: -0.00069420 Loss_I: 0.01853731
+| epoch   1 |  1800/13866 batches | ms/batch 2959.52 | loss  2.94 | ppl    19.01 | acc     0.46
+[1/15][1899/13866] Loss_D: 0.00275633 (Loss_D_real: -0.00353862 Loss_D_fake: -0.00078229) Loss_G: -0.00068721 Loss_I: 0.01890021
+[1/15][1999/13866] Loss_D: 0.00353822 (Loss_D_real: -0.00394460 Loss_D_fake: -0.00040638) Loss_G: -0.00034984 Loss_I: 0.01871378
+| epoch   1 |  2000/13866 batches | ms/batch 3019.48 | loss  2.89 | ppl    17.96 | acc     0.52
+[1/15][2099/13866] Loss_D: 0.00297412 (Loss_D_real: -0.00360236 Loss_D_fake: -0.00062825) Loss_G: -0.00001371 Loss_I: 0.01930851
+[1/15][2199/13866] Loss_D: 0.00298272 (Loss_D_real: -0.00372250 Loss_D_fake: -0.00073979) Loss_G: -0.00050694 Loss_I: 0.01838374
+| epoch   1 |  2200/13866 batches | ms/batch 2943.32 | loss  2.85 | ppl    17.27 | acc     0.49
+[1/15][2299/13866] Loss_D: 0.00316690 (Loss_D_real: -0.00380438 Loss_D_fake: -0.00063748) Loss_G: -0.00098874 Loss_I: 0.01914871
+[1/15][2399/13866] Loss_D: 0.00314938 (Loss_D_real: -0.00382134 Loss_D_fake: -0.00067196) Loss_G: -0.00106784 Loss_I: 0.01870913
+| epoch   1 |  2400/13866 batches | ms/batch 2950.12 | loss  2.81 | ppl    16.63 | acc     0.54
+[1/15][2499/13866] Loss_D: 0.00348008 (Loss_D_real: -0.00376501 Loss_D_fake: -0.00028493) Loss_G: -0.00022668 Loss_I: 0.01882792
+[1/15][2599/13866] Loss_D: 0.00282305 (Loss_D_real: -0.00394178 Loss_D_fake: -0.00111873) Loss_G: -0.00042615 Loss_I: 0.01796827
+| epoch   1 |  2600/13866 batches | ms/batch 2956.29 | loss  2.76 | ppl    15.79 | acc     0.56
+[1/15][2699/13866] Loss_D: 0.00329480 (Loss_D_real: -0.00395592 Loss_D_fake: -0.00066112) Loss_G: -0.00065744 Loss_I: 0.01758029
+[1/15][2799/13866] Loss_D: 0.00337008 (Loss_D_real: -0.00393785 Loss_D_fake: -0.00056778) Loss_G: -0.00055581 Loss_I: 0.01825166
+| epoch   1 |  2800/13866 batches | ms/batch 2913.31 | loss  2.75 | ppl    15.71 | acc     0.50
+[1/15][2899/13866] Loss_D: 0.00318217 (Loss_D_real: -0.00411608 Loss_D_fake: -0.00093392) Loss_G: -0.00094807 Loss_I: 0.01781916
+[1/15][2999/13866] Loss_D: 0.00339286 (Loss_D_real: -0.00412731 Loss_D_fake: -0.00073445) Loss_G: -0.00104398 Loss_I: 0.01729508
+| epoch   1 |  3000/13866 batches | ms/batch 2866.00 | loss  2.70 | ppl    14.95 | acc     0.53
+[1/15][3099/13866] Loss_D: 0.00337798 (Loss_D_real: -0.00413290 Loss_D_fake: -0.00075491) Loss_G: -0.00108350 Loss_I: 0.01701598
+[1/15][3199/13866] Loss_D: 0.00305717 (Loss_D_real: -0.00426245 Loss_D_fake: -0.00120528) Loss_G: -0.00080659 Loss_I: 0.01654292
+| epoch   1 |  3200/13866 batches | ms/batch 2861.60 | loss  2.70 | ppl    14.87 | acc     0.56
+[1/15][3299/13866] Loss_D: 0.00322602 (Loss_D_real: -0.00410738 Loss_D_fake: -0.00088136) Loss_G: -0.00099668 Loss_I: 0.01649971
+[1/15][3399/13866] Loss_D: 0.00305467 (Loss_D_real: -0.00418060 Loss_D_fake: -0.00112593) Loss_G: -0.00149753 Loss_I: 0.01650946
+| epoch   1 |  3400/13866 batches | ms/batch 2868.65 | loss  2.69 | ppl    14.71 | acc     0.50
+[1/15][3499/13866] Loss_D: 0.00331221 (Loss_D_real: -0.00430348 Loss_D_fake: -0.00099127) Loss_G: -0.00120674 Loss_I: 0.01622287
+[1/15][3599/13866] Loss_D: 0.00274016 (Loss_D_real: -0.00445557 Loss_D_fake: -0.00171542) Loss_G: -0.00131923 Loss_I: 0.01583622
+| epoch   1 |  3600/13866 batches | ms/batch 2883.31 | loss  2.65 | ppl    14.14 | acc     0.55
+[1/15][3699/13866] Loss_D: 0.00299347 (Loss_D_real: -0.00437865 Loss_D_fake: -0.00138518) Loss_G: -0.00111999 Loss_I: 0.01639501
+[1/15][3799/13866] Loss_D: 0.00274274 (Loss_D_real: -0.00436892 Loss_D_fake: -0.00162618) Loss_G: -0.00186275 Loss_I: 0.01594540
+| epoch   1 |  3800/13866 batches | ms/batch 2903.38 | loss  2.64 | ppl    14.08 | acc     0.51
+[1/15][3899/13866] Loss_D: 0.00300890 (Loss_D_real: -0.00438974 Loss_D_fake: -0.00138084) Loss_G: -0.00184586 Loss_I: 0.01550226
+[1/15][3999/13866] Loss_D: 0.00269471 (Loss_D_real: -0.00441601 Loss_D_fake: -0.00172130) Loss_G: -0.00218289 Loss_I: 0.01546362
+| epoch   1 |  4000/13866 batches | ms/batch 2932.72 | loss  2.60 | ppl    13.50 | acc     0.57
+[1/15][4099/13866] Loss_D: 0.00299884 (Loss_D_real: -0.00427290 Loss_D_fake: -0.00127405) Loss_G: -0.00146499 Loss_I: 0.01605171
+[1/15][4199/13866] Loss_D: 0.00226350 (Loss_D_real: -0.00427436 Loss_D_fake: -0.00201085) Loss_G: -0.00165450 Loss_I: 0.01499194
+| epoch   1 |  4200/13866 batches | ms/batch 2913.61 | loss  2.58 | ppl    13.20 | acc     0.53
+[1/15][4299/13866] Loss_D: 0.00238295 (Loss_D_real: -0.00441630 Loss_D_fake: -0.00203335) Loss_G: -0.00207604 Loss_I: 0.01467279
+[1/15][4399/13866] Loss_D: 0.00268045 (Loss_D_real: -0.00427189 Loss_D_fake: -0.00159145) Loss_G: -0.00172400 Loss_I: 0.01499211
+| epoch   1 |  4400/13866 batches | ms/batch 2976.55 | loss  2.56 | ppl    12.99 | acc     0.51
+[1/15][4499/13866] Loss_D: 0.00247206 (Loss_D_real: -0.00413537 Loss_D_fake: -0.00166331) Loss_G: -0.00163595 Loss_I: 0.01483300
+[1/15][4599/13866] Loss_D: 0.00263820 (Loss_D_real: -0.00419249 Loss_D_fake: -0.00155429) Loss_G: -0.00090479 Loss_I: 0.01478215
+| epoch   1 |  4600/13866 batches | ms/batch 2962.62 | loss  2.53 | ppl    12.57 | acc     0.56
+[1/15][4699/13866] Loss_D: 0.00240521 (Loss_D_real: -0.00405926 Loss_D_fake: -0.00165404) Loss_G: -0.00156267 Loss_I: 0.01444335
+[1/15][4799/13866] Loss_D: 0.00254080 (Loss_D_real: -0.00399631 Loss_D_fake: -0.00145551) Loss_G: -0.00131223 Loss_I: 0.01407459
+| epoch   1 |  4800/13866 batches | ms/batch 2918.63 | loss  2.55 | ppl    12.85 | acc     0.59
+[1/15][4899/13866] Loss_D: 0.00292388 (Loss_D_real: -0.00392758 Loss_D_fake: -0.00100370) Loss_G: -0.00092196 Loss_I: 0.01381089
+[1/15][4999/13866] Loss_D: 0.00324359 (Loss_D_real: -0.00419179 Loss_D_fake: -0.00094820) Loss_G: -0.00105052 Loss_I: 0.01407281
+| epoch   1 |  5000/13866 batches | ms/batch 2836.46 | loss  2.55 | ppl    12.77 | acc     0.55
+[1/15][5099/13866] Loss_D: 0.00366878 (Loss_D_real: -0.00438328 Loss_D_fake: -0.00071450) Loss_G: -0.00044445 Loss_I: 0.01393278
+[1/15][5199/13866] Loss_D: 0.00326038 (Loss_D_real: -0.00476756 Loss_D_fake: -0.00150718) Loss_G: -0.00112051 Loss_I: 0.01394815
+| epoch   1 |  5200/13866 batches | ms/batch 2889.11 | loss  2.50 | ppl    12.18 | acc     0.57
+[1/15][5299/13866] Loss_D: 0.00345249 (Loss_D_real: -0.00467658 Loss_D_fake: -0.00122409) Loss_G: -0.00110191 Loss_I: 0.01373270
+[1/15][5399/13866] Loss_D: 0.00270483 (Loss_D_real: -0.00405709 Loss_D_fake: -0.00135226) Loss_G: -0.00091965 Loss_I: 0.01369504
+| epoch   1 |  5400/13866 batches | ms/batch 2922.14 | loss  2.51 | ppl    12.26 | acc     0.56
+[1/15][5499/13866] Loss_D: 0.00295104 (Loss_D_real: -0.00395564 Loss_D_fake: -0.00100460) Loss_G: -0.00129876 Loss_I: 0.01331259
+[1/15][5599/13866] Loss_D: 0.00245226 (Loss_D_real: -0.00369120 Loss_D_fake: -0.00123894) Loss_G: -0.00144154 Loss_I: 0.01340231
+| epoch   1 |  5600/13866 batches | ms/batch 2911.64 | loss  2.49 | ppl    12.11 | acc     0.57
+[1/15][5699/13866] Loss_D: 0.00214062 (Loss_D_real: -0.00368559 Loss_D_fake: -0.00154497) Loss_G: -0.00164512 Loss_I: 0.01284856
+[1/15][5799/13866] Loss_D: 0.00255498 (Loss_D_real: -0.00372943 Loss_D_fake: -0.00117446) Loss_G: -0.00148669 Loss_I: 0.01284888
+| epoch   1 |  5800/13866 batches | ms/batch 2899.20 | loss  2.46 | ppl    11.75 | acc     0.56
+[1/15][5899/13866] Loss_D: 0.00163105 (Loss_D_real: -0.00325524 Loss_D_fake: -0.00162419) Loss_G: -0.00111007 Loss_I: 0.01396036
+[1/15][5999/13866] Loss_D: 0.00238951 (Loss_D_real: -0.00340822 Loss_D_fake: -0.00101870) Loss_G: -0.00126020 Loss_I: 0.01312679
+| epoch   1 |  6000/13866 batches | ms/batch 2930.58 | loss  2.42 | ppl    11.26 | acc     0.59
+[1/15][6099/13866] Loss_D: 0.00212951 (Loss_D_real: -0.00332395 Loss_D_fake: -0.00119444) Loss_G: -0.00125017 Loss_I: 0.01276657
+[1/15][6199/13866] Loss_D: 0.00257336 (Loss_D_real: -0.00305016 Loss_D_fake: -0.00047680) Loss_G: -0.00100012 Loss_I: 0.01319039
+| epoch   1 |  6200/13866 batches | ms/batch 2853.94 | loss  2.44 | ppl    11.51 | acc     0.60
+[1/15][6299/13866] Loss_D: 0.00161363 (Loss_D_real: -0.00286274 Loss_D_fake: -0.00124911) Loss_G: -0.00159218 Loss_I: 0.01202416
+[1/15][6399/13866] Loss_D: 0.00164557 (Loss_D_real: -0.00302131 Loss_D_fake: -0.00137574) Loss_G: -0.00060868 Loss_I: 0.01221116
+| epoch   1 |  6400/13866 batches | ms/batch 2851.19 | loss  2.41 | ppl    11.08 | acc     0.57
+[1/15][6499/13866] Loss_D: 0.00193792 (Loss_D_real: -0.00321752 Loss_D_fake: -0.00127961) Loss_G: -0.00118922 Loss_I: 0.01229927
+[1/15][6599/13866] Loss_D: 0.00201772 (Loss_D_real: -0.00298184 Loss_D_fake: -0.00096413) Loss_G: -0.00095056 Loss_I: 0.01214535
+| epoch   1 |  6600/13866 batches | ms/batch 2901.00 | loss  2.40 | ppl    11.00 | acc     0.54
+[1/15][6699/13866] Loss_D: 0.00136278 (Loss_D_real: -0.00248504 Loss_D_fake: -0.00112226) Loss_G: -0.00051476 Loss_I: 0.01200466
+[1/15][6799/13866] Loss_D: 0.00137727 (Loss_D_real: -0.00272081 Loss_D_fake: -0.00134354) Loss_G: -0.00106637 Loss_I: 0.01198920
+| epoch   1 |  6800/13866 batches | ms/batch 2875.51 | loss  2.41 | ppl    11.13 | acc     0.61
+[1/15][6899/13866] Loss_D: 0.00188618 (Loss_D_real: -0.00254292 Loss_D_fake: -0.00065675) Loss_G: -0.00043674 Loss_I: 0.01167757
+[1/15][6999/13866] Loss_D: 0.00191647 (Loss_D_real: -0.00253698 Loss_D_fake: -0.00062051) Loss_G: -0.00027594 Loss_I: 0.01155697
+| epoch   1 |  7000/13866 batches | ms/batch 2877.52 | loss  2.40 | ppl    11.03 | acc     0.56
+[1/15][7099/13866] Loss_D: 0.00270267 (Loss_D_real: -0.00299380 Loss_D_fake: -0.00029112) Loss_G: -0.00075929 Loss_I: 0.01137584
+[1/15][7199/13866] Loss_D: 0.00359938 (Loss_D_real: -0.00340022 Loss_D_fake: 0.00019916) Loss_G: 0.00042732 Loss_I: 0.01161852
+| epoch   1 |  7200/13866 batches | ms/batch 2881.65 | loss  2.35 | ppl    10.53 | acc     0.57
+[1/15][7299/13866] Loss_D: 0.00341130 (Loss_D_real: -0.00303109 Loss_D_fake: 0.00038021) Loss_G: 0.00077245 Loss_I: 0.01117298
+[1/15][7399/13866] Loss_D: 0.00401079 (Loss_D_real: -0.00357750 Loss_D_fake: 0.00043328) Loss_G: 0.00089421 Loss_I: 0.01097971
+| epoch   1 |  7400/13866 batches | ms/batch 2887.97 | loss  2.33 | ppl    10.29 | acc     0.63
+[1/15][7499/13866] Loss_D: 0.00423874 (Loss_D_real: -0.00381832 Loss_D_fake: 0.00042042) Loss_G: 0.00009225 Loss_I: 0.01095696
+[1/15][7599/13866] Loss_D: 0.00285132 (Loss_D_real: -0.00345456 Loss_D_fake: -0.00060324) Loss_G: -0.00047108 Loss_I: 0.01115837
+| epoch   1 |  7600/13866 batches | ms/batch 2881.88 | loss  2.31 | ppl    10.06 | acc     0.65
+[1/15][7699/13866] Loss_D: 0.00152790 (Loss_D_real: -0.00287250 Loss_D_fake: -0.00134460) Loss_G: -0.00128829 Loss_I: 0.01074149
+[1/15][7799/13866] Loss_D: 0.00230622 (Loss_D_real: -0.00337834 Loss_D_fake: -0.00107212) Loss_G: -0.00124883 Loss_I: 0.01093466
+| epoch   1 |  7800/13866 batches | ms/batch 2873.34 | loss  2.29 | ppl     9.89 | acc     0.61
+[1/15][7899/13866] Loss_D: 0.00158293 (Loss_D_real: -0.00213541 Loss_D_fake: -0.00055247) Loss_G: -0.00063650 Loss_I: 0.01044582
+[1/15][7999/13866] Loss_D: 0.00189266 (Loss_D_real: -0.00215199 Loss_D_fake: -0.00025933) Loss_G: -0.00066628 Loss_I: 0.01033427
+| epoch   1 |  8000/13866 batches | ms/batch 2884.47 | loss  2.27 | ppl     9.71 | acc     0.55
+[1/15][8099/13866] Loss_D: 0.00140674 (Loss_D_real: -0.00201448 Loss_D_fake: -0.00060775) Loss_G: -0.00011411 Loss_I: 0.01084503
+[1/15][8199/13866] Loss_D: 0.00239125 (Loss_D_real: -0.00251771 Loss_D_fake: -0.00012647) Loss_G: -0.00023285 Loss_I: 0.01021124
+| epoch   1 |  8200/13866 batches | ms/batch 2851.49 | loss  2.33 | ppl    10.25 | acc     0.61
+[1/15][8299/13866] Loss_D: 0.00243434 (Loss_D_real: -0.00277766 Loss_D_fake: -0.00034332) Loss_G: -0.00045836 Loss_I: 0.01042140
+[1/15][8399/13866] Loss_D: 0.00225859 (Loss_D_real: -0.00254116 Loss_D_fake: -0.00028257) Loss_G: -0.00057471 Loss_I: 0.01017054
+| epoch   1 |  8400/13866 batches | ms/batch 3262.23 | loss  2.29 | ppl     9.92 | acc     0.67
+[1/15][8499/13866] Loss_D: 0.00343631 (Loss_D_real: -0.00348287 Loss_D_fake: -0.00004656) Loss_G: 0.00037377 Loss_I: 0.00988954
+[1/15][8599/13866] Loss_D: 0.00376036 (Loss_D_real: -0.00323694 Loss_D_fake: 0.00052342) Loss_G: 0.00012690 Loss_I: 0.01016474
+| epoch   1 |  8600/13866 batches | ms/batch 2648.75 | loss  2.25 | ppl     9.51 | acc     0.61
+[1/15][8699/13866] Loss_D: 0.00403973 (Loss_D_real: -0.00348594 Loss_D_fake: 0.00055380) Loss_G: 0.00034530 Loss_I: 0.01051451
+[1/15][8799/13866] Loss_D: 0.00453771 (Loss_D_real: -0.00365982 Loss_D_fake: 0.00087789) Loss_G: 0.00024986 Loss_I: 0.00998263
+| epoch   1 |  8800/13866 batches | ms/batch 2926.01 | loss  2.21 | ppl     9.16 | acc     0.64
+[1/15][8899/13866] Loss_D: 0.00326256 (Loss_D_real: -0.00373818 Loss_D_fake: -0.00047562) Loss_G: -0.00011847 Loss_I: 0.00971026
+[1/15][8999/13866] Loss_D: 0.00199699 (Loss_D_real: -0.00334903 Loss_D_fake: -0.00135204) Loss_G: -0.00187621 Loss_I: 0.00971771
+| epoch   1 |  9000/13866 batches | ms/batch 3124.54 | loss  2.23 | ppl     9.26 | acc     0.62
+[1/15][9099/13866] Loss_D: 0.00224889 (Loss_D_real: -0.00384921 Loss_D_fake: -0.00160032) Loss_G: -0.00243233 Loss_I: 0.00992420
+[1/15][9199/13866] Loss_D: 0.00167429 (Loss_D_real: -0.00361017 Loss_D_fake: -0.00193588) Loss_G: -0.00187629 Loss_I: 0.00968329
+| epoch   1 |  9200/13866 batches | ms/batch 2774.04 | loss  2.21 | ppl     9.11 | acc     0.65
+[1/15][9299/13866] Loss_D: 0.00153711 (Loss_D_real: -0.00323187 Loss_D_fake: -0.00169476) Loss_G: -0.00173469 Loss_I: 0.00928556
+[1/15][9399/13866] Loss_D: 0.00227792 (Loss_D_real: -0.00399383 Loss_D_fake: -0.00171591) Loss_G: -0.00193322 Loss_I: 0.00893580
+| epoch   1 |  9400/13866 batches | ms/batch 2796.37 | loss  2.20 | ppl     9.04 | acc     0.64
+[1/15][9499/13866] Loss_D: 0.00214652 (Loss_D_real: -0.00372077 Loss_D_fake: -0.00157425) Loss_G: -0.00208107 Loss_I: 0.00923422
+[1/15][9599/13866] Loss_D: 0.00202767 (Loss_D_real: -0.00352866 Loss_D_fake: -0.00150100) Loss_G: -0.00183846 Loss_I: 0.00918121
+| epoch   1 |  9600/13866 batches | ms/batch 2959.29 | loss  2.19 | ppl     8.97 | acc     0.61
+[1/15][9699/13866] Loss_D: 0.00216831 (Loss_D_real: -0.00351143 Loss_D_fake: -0.00134312) Loss_G: -0.00168086 Loss_I: 0.00884118
+[1/15][9799/13866] Loss_D: 0.00175190 (Loss_D_real: -0.00348342 Loss_D_fake: -0.00173152) Loss_G: -0.00257948 Loss_I: 0.00944629
+| epoch   1 |  9800/13866 batches | ms/batch 2974.90 | loss  2.19 | ppl     8.93 | acc     0.63
+[1/15][9899/13866] Loss_D: 0.00157654 (Loss_D_real: -0.00379245 Loss_D_fake: -0.00221591) Loss_G: -0.00170338 Loss_I: 0.00885355
+[1/15][9999/13866] Loss_D: 0.00147158 (Loss_D_real: -0.00360943 Loss_D_fake: -0.00213785) Loss_G: -0.00257008 Loss_I: 0.00880644
+| epoch   1 | 10000/13866 batches | ms/batch 3109.03 | loss  2.19 | ppl     8.90 | acc     0.59
+[1/15][10099/13866] Loss_D: 0.00163403 (Loss_D_real: -0.00388318 Loss_D_fake: -0.00224915) Loss_G: -0.00207520 Loss_I: 0.00882714
+[1/15][10199/13866] Loss_D: 0.00175223 (Loss_D_real: -0.00374339 Loss_D_fake: -0.00199116) Loss_G: -0.00206257 Loss_I: 0.00879178
+| epoch   1 | 10200/13866 batches | ms/batch 3206.30 | loss  2.13 | ppl     8.45 | acc     0.72
+[1/15][10299/13866] Loss_D: 0.00153444 (Loss_D_real: -0.00337099 Loss_D_fake: -0.00183655) Loss_G: -0.00247011 Loss_I: 0.00870066
+[1/15][10399/13866] Loss_D: 0.00119853 (Loss_D_real: -0.00355305 Loss_D_fake: -0.00235452) Loss_G: -0.00209449 Loss_I: 0.00849479
+| epoch   1 | 10400/13866 batches | ms/batch 3378.76 | loss  2.12 | ppl     8.29 | acc     0.69
+[1/15][10499/13866] Loss_D: 0.00113672 (Loss_D_real: -0.00324497 Loss_D_fake: -0.00210825) Loss_G: -0.00218843 Loss_I: 0.00803266
+[1/15][10599/13866] Loss_D: 0.00102702 (Loss_D_real: -0.00302375 Loss_D_fake: -0.00199673) Loss_G: -0.00174765 Loss_I: 0.00816230
+| epoch   1 | 10600/13866 batches | ms/batch 3151.65 | loss  2.11 | ppl     8.26 | acc     0.63
+[1/15][10699/13866] Loss_D: 0.00086990 (Loss_D_real: -0.00292040 Loss_D_fake: -0.00205050) Loss_G: -0.00272190 Loss_I: 0.00822485
+[1/15][10799/13866] Loss_D: 0.00078430 (Loss_D_real: -0.00270848 Loss_D_fake: -0.00192418) Loss_G: -0.00208320 Loss_I: 0.00797785
+| epoch   1 | 10800/13866 batches | ms/batch 3459.44 | loss  2.10 | ppl     8.20 | acc     0.66
+[1/15][10899/13866] Loss_D: 0.00089125 (Loss_D_real: -0.00261232 Loss_D_fake: -0.00172107) Loss_G: -0.00159834 Loss_I: 0.00791974
+[1/15][10999/13866] Loss_D: 0.00233618 (Loss_D_real: -0.00344942 Loss_D_fake: -0.00111324) Loss_G: -0.00131873 Loss_I: 0.00844942
+| epoch   1 | 11000/13866 batches | ms/batch 3465.49 | loss  2.11 | ppl     8.27 | acc     0.63
+[1/15][11099/13866] Loss_D: 0.00264133 (Loss_D_real: -0.00314850 Loss_D_fake: -0.00050717) Loss_G: -0.00023927 Loss_I: 0.00796228
+[1/15][11199/13866] Loss_D: 0.00411649 (Loss_D_real: -0.00403917 Loss_D_fake: 0.00007732) Loss_G: 0.00000647 Loss_I: 0.00766633
+| epoch   1 | 11200/13866 batches | ms/batch 3420.68 | loss  2.12 | ppl     8.32 | acc     0.65
+[1/15][11299/13866] Loss_D: 0.00405166 (Loss_D_real: -0.00427468 Loss_D_fake: -0.00022301) Loss_G: -0.00021805 Loss_I: 0.00765599
+[1/15][11399/13866] Loss_D: 0.00352810 (Loss_D_real: -0.00353620 Loss_D_fake: -0.00000809) Loss_G: -0.00024996 Loss_I: 0.00740686
+| epoch   1 | 11400/13866 batches | ms/batch 3401.20 | loss  2.07 | ppl     7.91 | acc     0.61
+[1/15][11499/13866] Loss_D: 0.00352359 (Loss_D_real: -0.00399829 Loss_D_fake: -0.00047470) Loss_G: -0.00005728 Loss_I: 0.00764050
+[1/15][11599/13866] Loss_D: 0.00258193 (Loss_D_real: -0.00379966 Loss_D_fake: -0.00121772) Loss_G: -0.00089424 Loss_I: 0.00751937
+| epoch   1 | 11600/13866 batches | ms/batch 3436.00 | loss  2.07 | ppl     7.94 | acc     0.62
+[1/15][11699/13866] Loss_D: 0.00192635 (Loss_D_real: -0.00385180 Loss_D_fake: -0.00192545) Loss_G: -0.00211024 Loss_I: 0.00729701
+[1/15][11799/13866] Loss_D: 0.00109144 (Loss_D_real: -0.00385744 Loss_D_fake: -0.00276600) Loss_G: -0.00258353 Loss_I: 0.00723522
+| epoch   1 | 11800/13866 batches | ms/batch 3514.03 | loss  2.08 | ppl     8.00 | acc     0.58
+[1/15][11899/13866] Loss_D: 0.00180219 (Loss_D_real: -0.00379206 Loss_D_fake: -0.00198987) Loss_G: -0.00253075 Loss_I: 0.00695106
+[1/15][11999/13866] Loss_D: 0.00206760 (Loss_D_real: -0.00440079 Loss_D_fake: -0.00233319) Loss_G: -0.00229246 Loss_I: 0.00719761
+| epoch   1 | 12000/13866 batches | ms/batch 3397.15 | loss  2.04 | ppl     7.71 | acc     0.68
+[1/15][12099/13866] Loss_D: 0.00153475 (Loss_D_real: -0.00392760 Loss_D_fake: -0.00239285) Loss_G: -0.00222067 Loss_I: 0.00664735
+[1/15][12199/13866] Loss_D: 0.00125473 (Loss_D_real: -0.00337405 Loss_D_fake: -0.00211932) Loss_G: -0.00164468 Loss_I: 0.00662403
+| epoch   1 | 12200/13866 batches | ms/batch 3347.69 | loss  2.06 | ppl     7.82 | acc     0.66
+[1/15][12299/13866] Loss_D: 0.00212899 (Loss_D_real: -0.00402937 Loss_D_fake: -0.00190038) Loss_G: -0.00184219 Loss_I: 0.00697941
+[1/15][12399/13866] Loss_D: 0.00098089 (Loss_D_real: -0.00325144 Loss_D_fake: -0.00227055) Loss_G: -0.00258488 Loss_I: 0.00681468
+| epoch   1 | 12400/13866 batches | ms/batch 3374.48 | loss  2.04 | ppl     7.66 | acc     0.61
+[1/15][12499/13866] Loss_D: 0.00134606 (Loss_D_real: -0.00333709 Loss_D_fake: -0.00199103) Loss_G: -0.00176105 Loss_I: 0.00684568
+[1/15][12599/13866] Loss_D: 0.00135458 (Loss_D_real: -0.00349953 Loss_D_fake: -0.00214495) Loss_G: -0.00238283 Loss_I: 0.00639440
+| epoch   1 | 12600/13866 batches | ms/batch 3416.19 | loss  2.00 | ppl     7.36 | acc     0.64
+[1/15][12699/13866] Loss_D: 0.00158245 (Loss_D_real: -0.00376863 Loss_D_fake: -0.00218618) Loss_G: -0.00272766 Loss_I: 0.00633606
+[1/15][12799/13866] Loss_D: 0.00106679 (Loss_D_real: -0.00355372 Loss_D_fake: -0.00248693) Loss_G: -0.00296296 Loss_I: 0.00631095
+| epoch   1 | 12800/13866 batches | ms/batch 3376.51 | loss  2.02 | ppl     7.57 | acc     0.68
+[1/15][12899/13866] Loss_D: 0.00135178 (Loss_D_real: -0.00365278 Loss_D_fake: -0.00230100) Loss_G: -0.00205697 Loss_I: 0.00651996
+[1/15][12999/13866] Loss_D: 0.00126647 (Loss_D_real: -0.00339516 Loss_D_fake: -0.00212869) Loss_G: -0.00220060 Loss_I: 0.00609044
+| epoch   1 | 13000/13866 batches | ms/batch 3278.38 | loss  1.99 | ppl     7.28 | acc     0.60
+[1/15][13099/13866] Loss_D: 0.00137174 (Loss_D_real: -0.00339180 Loss_D_fake: -0.00202006) Loss_G: -0.00204096 Loss_I: 0.00597096
+[1/15][13199/13866] Loss_D: 0.00117908 (Loss_D_real: -0.00342195 Loss_D_fake: -0.00224287) Loss_G: -0.00197325 Loss_I: 0.00581399
+| epoch   1 | 13200/13866 batches | ms/batch 2846.59 | loss  1.99 | ppl     7.30 | acc     0.62
+[1/15][13299/13866] Loss_D: 0.00084617 (Loss_D_real: -0.00334659 Loss_D_fake: -0.00250043) Loss_G: -0.00243717 Loss_I: 0.00597469
+[1/15][13399/13866] Loss_D: 0.00081086 (Loss_D_real: -0.00280262 Loss_D_fake: -0.00199176) Loss_G: -0.00236532 Loss_I: 0.00673239
+| epoch   1 | 13400/13866 batches | ms/batch 2866.09 | loss  1.99 | ppl     7.30 | acc     0.66
+[1/15][13499/13866] Loss_D: 0.00175718 (Loss_D_real: -0.00346568 Loss_D_fake: -0.00170851) Loss_G: -0.00208627 Loss_I: 0.00576939
+[1/15][13599/13866] Loss_D: 0.00105909 (Loss_D_real: -0.00323481 Loss_D_fake: -0.00217572) Loss_G: -0.00203271 Loss_I: 0.00552322
+| epoch   1 | 13600/13866 batches | ms/batch 2868.62 | loss  1.93 | ppl     6.89 | acc     0.65
+[1/15][13699/13866] Loss_D: 0.00078826 (Loss_D_real: -0.00307447 Loss_D_fake: -0.00228622) Loss_G: -0.00168583 Loss_I: 0.00547166
+[1/15][13799/13866] Loss_D: 0.00133029 (Loss_D_real: -0.00345563 Loss_D_fake: -0.00212533) Loss_G: -0.00224239 Loss_I: 0.00548522
+| epoch   1 | 13800/13866 batches | ms/batch 2913.83 | loss  1.96 | ppl     7.09 | acc     0.68
+-----------------------------------------------------------------------------------------
+| end of epoch   1 | time: 43131.27s | test loss  1.90 | test ppl  6.66 | acc 0.669
+-----------------------------------------------------------------------------------------
+GAN training loop schedule increased to 2
+[2/15][99/13866] Loss_D: 0.00303315 (Loss_D_real: -0.00304642 Loss_D_fake: -0.00001327) Loss_G: -0.00046628 Loss_I: 0.00540462
+[2/15][199/13866] Loss_D: 0.00228589 (Loss_D_real: -0.00351712 Loss_D_fake: -0.00123124) Loss_G: -0.00115124 Loss_I: 0.00532682
+| epoch   2 |   200/13866 batches | ms/batch 5291.54 | loss  1.90 | ppl     6.66 | acc     0.66
+[2/15][299/13866] Loss_D: 0.00252602 (Loss_D_real: -0.00358798 Loss_D_fake: -0.00106196) Loss_G: -0.00124367 Loss_I: 0.00531563
+[2/15][399/13866] Loss_D: 0.00155307 (Loss_D_real: -0.00351366 Loss_D_fake: -0.00196059) Loss_G: -0.00228953 Loss_I: 0.00555551
+| epoch   2 |   400/13866 batches | ms/batch 5358.72 | loss  1.91 | ppl     6.76 | acc     0.72
+[2/15][499/13866] Loss_D: 0.00069641 (Loss_D_real: -0.00346529 Loss_D_fake: -0.00276888) Loss_G: -0.00233712 Loss_I: 0.00528227
+[2/15][599/13866] Loss_D: 0.00117890 (Loss_D_real: -0.00374231 Loss_D_fake: -0.00256341) Loss_G: -0.00275597 Loss_I: 0.00501275
+| epoch   2 |   600/13866 batches | ms/batch 5357.29 | loss  1.89 | ppl     6.59 | acc     0.69
+[2/15][699/13866] Loss_D: 0.00153859 (Loss_D_real: -0.00424755 Loss_D_fake: -0.00270896) Loss_G: -0.00291497 Loss_I: 0.00504903
+[2/15][799/13866] Loss_D: 0.00137469 (Loss_D_real: -0.00517863 Loss_D_fake: -0.00380394) Loss_G: -0.00348918 Loss_I: 0.00503308
+| epoch   2 |   800/13866 batches | ms/batch 5417.72 | loss  1.88 | ppl     6.55 | acc     0.68
+[2/15][899/13866] Loss_D: 0.00186827 (Loss_D_real: -0.00517879 Loss_D_fake: -0.00331052) Loss_G: -0.00297744 Loss_I: 0.00496929
+[2/15][999/13866] Loss_D: 0.00203880 (Loss_D_real: -0.00501840 Loss_D_fake: -0.00297959) Loss_G: -0.00221764 Loss_I: 0.00486140
+| epoch   2 |  1000/13866 batches | ms/batch 5360.12 | loss  1.86 | ppl     6.45 | acc     0.64
+[2/15][1099/13866] Loss_D: 0.00336694 (Loss_D_real: -0.00450263 Loss_D_fake: -0.00113570) Loss_G: -0.00138294 Loss_I: 0.00493883
+[2/15][1199/13866] Loss_D: 0.00248052 (Loss_D_real: -0.00409373 Loss_D_fake: -0.00161321) Loss_G: -0.00130477 Loss_I: 0.00488605
+| epoch   2 |  1200/13866 batches | ms/batch 5387.46 | loss  1.86 | ppl     6.40 | acc     0.65
+[2/15][1299/13866] Loss_D: 0.00147433 (Loss_D_real: -0.00436812 Loss_D_fake: -0.00289379) Loss_G: -0.00255555 Loss_I: 0.00478953
+[2/15][1399/13866] Loss_D: 0.00124975 (Loss_D_real: -0.00374458 Loss_D_fake: -0.00249483) Loss_G: -0.00254801 Loss_I: 0.00468179
+| epoch   2 |  1400/13866 batches | ms/batch 4026.59 | loss  1.87 | ppl     6.51 | acc     0.70
+[2/15][1499/13866] Loss_D: 0.00153915 (Loss_D_real: -0.00433588 Loss_D_fake: -0.00279673) Loss_G: -0.00308341 Loss_I: 0.00463860
+[2/15][1599/13866] Loss_D: 0.00114968 (Loss_D_real: -0.00472490 Loss_D_fake: -0.00357521) Loss_G: -0.00349356 Loss_I: 0.00468166
+| epoch   2 |  1600/13866 batches | ms/batch 4139.15 | loss  1.88 | ppl     6.54 | acc     0.64
+[2/15][1699/13866] Loss_D: 0.00158961 (Loss_D_real: -0.00458705 Loss_D_fake: -0.00299744) Loss_G: -0.00334987 Loss_I: 0.00470181
+[2/15][1799/13866] Loss_D: 0.00134331 (Loss_D_real: -0.00444574 Loss_D_fake: -0.00310243) Loss_G: -0.00312344 Loss_I: 0.00473505
+| epoch   2 |  1800/13866 batches | ms/batch 4894.48 | loss  1.84 | ppl     6.30 | acc     0.65
+[2/15][1899/13866] Loss_D: 0.00126993 (Loss_D_real: -0.00427865 Loss_D_fake: -0.00300871) Loss_G: -0.00286264 Loss_I: 0.00437468
+[2/15][1999/13866] Loss_D: 0.00149546 (Loss_D_real: -0.00409976 Loss_D_fake: -0.00260430) Loss_G: -0.00329655 Loss_I: 0.00427557
+| epoch   2 |  2000/13866 batches | ms/batch 4553.63 | loss  1.82 | ppl     6.17 | acc     0.71
+[2/15][2099/13866] Loss_D: 0.00194677 (Loss_D_real: -0.00436613 Loss_D_fake: -0.00241936) Loss_G: -0.00308012 Loss_I: 0.00431886
+[2/15][2199/13866] Loss_D: 0.00109671 (Loss_D_real: -0.00424804 Loss_D_fake: -0.00315133) Loss_G: -0.00271754 Loss_I: 0.00428316
+| epoch   2 |  2200/13866 batches | ms/batch 6724.94 | loss  1.81 | ppl     6.13 | acc     0.65
+[2/15][2299/13866] Loss_D: 0.00113363 (Loss_D_real: -0.00431541 Loss_D_fake: -0.00318179) Loss_G: -0.00337090 Loss_I: 0.00434087
+[2/15][2399/13866] Loss_D: 0.00153887 (Loss_D_real: -0.00451982 Loss_D_fake: -0.00298094) Loss_G: -0.00331070 Loss_I: 0.00425936
+| epoch   2 |  2400/13866 batches | ms/batch 3812.31 | loss  1.81 | ppl     6.13 | acc     0.65
+[2/15][2499/13866] Loss_D: 0.00154843 (Loss_D_real: -0.00423433 Loss_D_fake: -0.00268590) Loss_G: -0.00287763 Loss_I: 0.00431021
+[2/15][2599/13866] Loss_D: 0.00168768 (Loss_D_real: -0.00407005 Loss_D_fake: -0.00238237) Loss_G: -0.00231524 Loss_I: 0.00430498
+| epoch   2 |  2600/13866 batches | ms/batch 3903.12 | loss  1.79 | ppl     6.00 | acc     0.66
+[2/15][2699/13866] Loss_D: 0.00101301 (Loss_D_real: -0.00426491 Loss_D_fake: -0.00325190) Loss_G: -0.00307475 Loss_I: 0.00411549
+[2/15][2799/13866] Loss_D: 0.00167897 (Loss_D_real: -0.00429354 Loss_D_fake: -0.00261457) Loss_G: -0.00263667 Loss_I: 0.00391390
+| epoch   2 |  2800/13866 batches | ms/batch 4669.68 | loss  1.79 | ppl     5.97 | acc     0.62
+[2/15][2899/13866] Loss_D: 0.00156317 (Loss_D_real: -0.00405219 Loss_D_fake: -0.00248902) Loss_G: -0.00293149 Loss_I: 0.00402428
+[2/15][2999/13866] Loss_D: 0.00218422 (Loss_D_real: -0.00417139 Loss_D_fake: -0.00198718) Loss_G: -0.00220189 Loss_I: 0.00426941
+| epoch   2 |  3000/13866 batches | ms/batch 4794.87 | loss  1.78 | ppl     5.90 | acc     0.68
+[2/15][3099/13866] Loss_D: 0.00139220 (Loss_D_real: -0.00375098 Loss_D_fake: -0.00235878) Loss_G: -0.00191810 Loss_I: 0.00391284
+[2/15][3199/13866] Loss_D: 0.00152423 (Loss_D_real: -0.00420404 Loss_D_fake: -0.00267981) Loss_G: -0.00289948 Loss_I: 0.00398809
+| epoch   2 |  3200/13866 batches | ms/batch 4701.00 | loss  1.78 | ppl     5.91 | acc     0.73
+[2/15][3299/13866] Loss_D: 0.00148068 (Loss_D_real: -0.00378950 Loss_D_fake: -0.00230882) Loss_G: -0.00243569 Loss_I: 0.00380478
+[2/15][3399/13866] Loss_D: 0.00158437 (Loss_D_real: -0.00395272 Loss_D_fake: -0.00236835) Loss_G: -0.00216134 Loss_I: 0.00372810
+| epoch   2 |  3400/13866 batches | ms/batch 4642.27 | loss  1.78 | ppl     5.92 | acc     0.72
+[2/15][3499/13866] Loss_D: 0.00156972 (Loss_D_real: -0.00414993 Loss_D_fake: -0.00258022) Loss_G: -0.00288686 Loss_I: 0.00378501
+[2/15][3599/13866] Loss_D: 0.00132175 (Loss_D_real: -0.00423512 Loss_D_fake: -0.00291337) Loss_G: -0.00256249 Loss_I: 0.00371961
+| epoch   2 |  3600/13866 batches | ms/batch 4718.84 | loss  1.76 | ppl     5.83 | acc     0.69
+[2/15][3699/13866] Loss_D: 0.00096865 (Loss_D_real: -0.00421566 Loss_D_fake: -0.00324701) Loss_G: -0.00319657 Loss_I: 0.00368277
+[2/15][3799/13866] Loss_D: 0.00178532 (Loss_D_real: -0.00452491 Loss_D_fake: -0.00273959) Loss_G: -0.00278512 Loss_I: 0.00362870
+| epoch   2 |  3800/13866 batches | ms/batch 4742.06 | loss  1.76 | ppl     5.79 | acc     0.68
+[2/15][3899/13866] Loss_D: 0.00156070 (Loss_D_real: -0.00451510 Loss_D_fake: -0.00295441) Loss_G: -0.00306523 Loss_I: 0.00371931
+[2/15][3999/13866] Loss_D: 0.00103304 (Loss_D_real: -0.00453830 Loss_D_fake: -0.00350526) Loss_G: -0.00336287 Loss_I: 0.00353089
+| epoch   2 |  4000/13866 batches | ms/batch 4548.66 | loss  1.75 | ppl     5.75 | acc     0.65
+[2/15][4099/13866] Loss_D: 0.00146160 (Loss_D_real: -0.00439771 Loss_D_fake: -0.00293611) Loss_G: -0.00311501 Loss_I: 0.00350979
+[2/15][4199/13866] Loss_D: 0.00112157 (Loss_D_real: -0.00441013 Loss_D_fake: -0.00328856) Loss_G: -0.00339728 Loss_I: 0.00345118
+| epoch   2 |  4200/13866 batches | ms/batch 3418.47 | loss  1.73 | ppl     5.66 | acc     0.78
+[2/15][4299/13866] Loss_D: 0.00083253 (Loss_D_real: -0.00416302 Loss_D_fake: -0.00333049) Loss_G: -0.00303419 Loss_I: 0.00372402
